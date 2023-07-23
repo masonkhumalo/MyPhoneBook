@@ -9,6 +9,6 @@ import { ContactsService } from './contacts.service';
 export class AppComponent {
   title = 'frontend';
 
-  constructor(private ContServ : ContactsService) { }
+  constructor() { }
 
 }

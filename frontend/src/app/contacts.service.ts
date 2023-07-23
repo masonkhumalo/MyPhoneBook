@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { contacts } from './contacts';
 import { Observable, throwError } from 'rxjs';
 
@@ -20,8 +20,8 @@ export class ContactsService {
     return this.http.get<contacts>(`${this.apiUrl}/${id}`);
   }
 
-  createContact(contacts: contacts): Observable<contacts> {
-    return this.http.post<contacts>(this.apiUrl, contacts);
+  create(contacts: contacts) {
+    return this.http.post<any>(this.apiUrl, contacts);
   }
 
   updateContact(contacts: contacts): Observable<contacts> {

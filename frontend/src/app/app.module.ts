@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { TableComponent } from './components/table/table.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule,ReactiveFormsModule, NgModel} from '@angular/forms';
 
 
 @NgModule({
@@ -17,9 +18,13 @@ import { HttpClientModule } from '@angular/common/http';
     TableComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
+   
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

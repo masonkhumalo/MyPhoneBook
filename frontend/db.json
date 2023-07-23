@@ -1,8 +1,41 @@
 {
-    "contacts": [
-      { "id": 1, "name": "Mason Khumalo", "phone": "1234567890" ,"email":"mason@gmail.com" },
-      { "id": 2, "name": "Nkululeko Mahlangu", "phone": "0876543210" ,"email":"nkhuleko@.cpom" },
-      { "id": 3, "name": "sai mhlanga", "phone": "097435678" ,"email":"sai@.com"}
-    ]
-  }
-  
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Mason Khumalo",
+      "phone": "1234567890",
+      "email": "mason@gmail.com",
+      "type": "friend"
+    },
+    {
+      "id": 2,
+      "name": "Nkululeko Mahlangu",
+      "phone": "0876543210",
+      "email": "nkhuleko@.cpom",
+      "type": "family"
+    },
+    {
+      "id": 3,
+      "name": "sai mhlanga",
+      "phone": "097435678",
+      "email": "sai@.com",
+      "type": "work"
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7,
+      "name": "mason",
+      "phone": "097435678",
+      "email": "dfgdhj@.com",
+      "type": "work"
+    }
+  ]
+}

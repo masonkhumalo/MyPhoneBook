@@ -4,53 +4,54 @@
         <input type="checkbox" id="my-modal-4" class="modal-toggle" />
         <label for="my-modal-4" class="modal cursor-pointer">
             <label class="modal-box" style="background-color: #ffffff">
-                <form>
-                    <div>
+                
+                    
+                        <form  >
                         <div class="row">
                             <div class="col ml-6">
                                 <label for="">Name</label>
                                 <div>
-                                    <input autocomplete="off" type="make" formControlName="make"
-                                        class="form-control bg-[#EEEFF0]  appearance-none border pl-2 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-28 absolute py-2 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline " />
+                                    <input autocomplete="off" type="name" class="form-control" formControlName="name" name="name" id="name" placeholder="name"
+                                        class=" bg-[#EEEFF0]  appearance-none border pl-2 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-28 absolute py-2 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline " />
                                 </div>
                             </div>
                             <div class="col">
                                 <label for="">Contacts</label>
                                 <div>
-                                    <input autocomplete="off" type="registration" formControlName="registration"
-                                        class="form-control bg-[#EEEFF0]  appearance-none border pl-2 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-28 absolute py-2 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline " />
+                                    <input autocomplete="off" type="phone" class="form-control" name="phone" id="phone" placeholder="phone" formControlName="phone"
+                                        class=" bg-[#EEEFF0]  appearance-none border pl-2 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-28 absolute py-2 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline " />
                                 </div>
                             </div>
                         </div>
                         <br>
                         <br>
 
-                    </div>
+                   
                     <div>
                         <div class="row">
                             <div class="col ml-6">
                                 <label for="">Email</label>
                                 <div>
-                                    <input autocomplete="off" type="model" formControlName="model"
-                                        class="form-control bg-[#EEEFF0]  appearance-none border pl-2 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-28 absolute py-2 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline " />
+                                    <input autocomplete="off" type="email" id="email" class="form-control" name="email" id="email" placeholder="email" formControlName="email"
+                                        class=" bg-[#EEEFF0]  appearance-none border pl-2 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-28 absolute py-2 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline " />
                                 </div>
                             </div>
                             <div class="col">
                                 <label for="">Relationship</label>
                                 <div>
-                                    <select formControlName="fuel_type" name="fuel_type" id="fuel_type"
+                                    <select id="type" class="form-control" name="type"  id="type" formControlName="type"
                                         class=" bg-[#EEEFF0] border rounded-[4px]  hover:outline-none focus:outline-none hover:border-teal-700  py-2 w-18  focus:outline-none  ">
                                         <option>select_type</option>
-                                        <option value="diesel">family</option>
-                                        <option value="diesel">work</option>
-                                        <option value="petrol">friend</option>
+                                        <option value="family">family</option>
+                                        <option value="work">work</option>
+                                        <option value="friend">friend</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="logdiv mt-5 w-fit mx-auto   content-start  items-center justify-center">
-                        <button type="submit">Add</button>
+                        <button  type="submit" onclick="addNewContact()" >Add</button>
                     </div>
                 </form>
             </label>
